@@ -10,4 +10,9 @@ export class ProductlistComponent  {
 //we are storing the data from the json file here to be looped in the template of theis component
   products = [...products]
   
+
+  //a function that is called by click of share button in template of this component
+  share(){
+
+  }
 }
