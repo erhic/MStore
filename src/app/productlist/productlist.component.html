@@ -2,8 +2,9 @@
   <h2> Products</h2>
   <div *ngFor="let product of products" class="bg-light p-2 m-2">
     <h3 class="fs-4 fw-bold text-primary py-2"><a [title]="product.name+' detail'"> {{product.name}}</a></h3>
-    <p>{{product.description}}</p>
-    <!-- {{product.}} -->
+    <p *ngIf="product.description">
+      Description: {{product.description}}</p>
+
 
   </div>
 </div>
