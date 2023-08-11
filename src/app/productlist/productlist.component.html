@@ -6,5 +6,7 @@
       Description: {{product.description}}</p>
 
     <button type="button" class="btn btn-sm btn-primary" (click)="share()">Share</button>
+    <app-product-alerts [product]="product" (notify)="onNotify()">
+    </app-product-alerts>
   </div>
 </div>

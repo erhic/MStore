@@ -32,7 +32,7 @@ export const products = [
 {
   id: 4,
   name:'Nokia',
-  price:700,
+  price:703,
   description:'A small phone with one of the best screens'
 }
 

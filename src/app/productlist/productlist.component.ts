@@ -20,4 +20,7 @@ export class ProductlistComponent  {
   share(){
     Swal.fire({text:'Product shared successfully' ,icon:'success'})
   }
+  onNotify(){
+    Swal.fire({text:'You will be notified when the product goes on sale.', icon:'info'})
+  }
 }
