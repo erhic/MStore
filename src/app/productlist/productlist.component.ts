@@ -1,5 +1,9 @@
 import { Component, OnInit,Input } from '@angular/core';
 import {  products ,  Product } from '../product';
+import Swal from 'sweetalert2';
+
+
+
 
 @Component({
   selector: 'app-productlist',
@@ -14,6 +18,6 @@ export class ProductlistComponent  {
 
   //a function that is called by click of share button in template of this component
   share(){
-window.alert('Product shared successfully' )
+    Swal.fire({text:'Product shared successfully' ,icon:'success'})
   }
 }
