@@ -9,6 +9,11 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
 import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
+
+const routes= [
+  {path:'',component:ProductlistComponent},
+  {path:'products/:productId',component:ProductDetailsComponent}
+]
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,10 +23,7 @@ import { RouterModule } from '@angular/router';
     ProductDetailsComponent
   ],
   imports: [
-    BrowserModule,ReactiveFormsModule,RouterModule.forRoot([
-      {path:'',component:ProductlistComponent},
-      {path:'products/productId',component:ProductDetailsComponent},
-    ])
+    BrowserModule,ReactiveFormsModule,RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]
