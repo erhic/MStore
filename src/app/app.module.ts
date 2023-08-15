@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { ProductlistComponent } from './productlist/productlist.component';
@@ -27,7 +28,7 @@ const routes= [
     CartComponent
   ],
   imports: [
-    BrowserModule,ReactiveFormsModule, RouterModule.forRoot(routes)
+    BrowserModule,ReactiveFormsModule,HttpClientModule, RouterModule.forRoot(routes),
   ],
   providers: [CartService],
   bootstrap: [AppComponent]
