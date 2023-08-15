@@ -20,7 +20,7 @@ export const products = [
 {
   id: 2,
   name:'Huawei',
-  price:600,
+  price:800,
   description:'A extra large phone with one of the best screens'
 },
 {
