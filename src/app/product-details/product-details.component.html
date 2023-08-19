@@ -1,8 +1,10 @@
 <h2>Product Details</h2>
 
-<div *ngIf="product.length">
+<div *ngIf="product.length <=2;then showProducts else nothing">
   <h3>{{ product.name }}</h3>
   <h4>{{ product.price | currency }}</h4>
   <p>{{ product.description }}</p>
   <button type="button" (click)="addInCart(product)">Buy</button>
 </div>
+<ng-template #showProducts>Loading ....</ng-template>
+<ng-template #nothing>No products</ng-template>
