@@ -1,9 +1,9 @@
 <div class="container">
   <h2> Products</h2>
-  <div *ngFor="let product of products" class="bg-light p-2 m-2">
+  <div *ngFor="let product of products; index as a ; odd as o; even as e " [class.warning]="o" class="bg-light p-2 m-2">
     <h3 class="fs-4 fw-bold text-primary py-2">
       <a [title]="product.name+' detail'" [routerLink]="['/products',product.id]">
-        {{product.name}}</a>
+        {{product.name +'..'}}</a>{{a}} {{0}} {{e}}
     </h3>
     <p *ngIf="product.description">
       Description: {{product.description}}
